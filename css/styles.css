@@ -12,6 +12,7 @@
   --primary-icon-color: #afb1b8;
   --projekt-bg-color: rgba(33, 150, 243, 0.9);
   --bg-work-color: rgba(47, 48, 58, 0.8);
+  --ph-text-color: rgba(117, 117, 117, 0.5);
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -245,6 +246,13 @@ a {
   line-height: 1.8;
   letter-spacing: 0.06em;
   text-align: center;
+  box-shadow: 0px, 4px, 0px, 4px, rgba(0, 0, 0, 0.15);
+
+  transition: box-shadow 250ms var(--timing-function);
+}
+.button:hover,
+.button:focus {
+  box-shadow: 0px, 4px, 0px, 4px, rgba(0, 0, 0, 0.15);
 }
 /* модальне окно */
 .backdrop {
@@ -294,8 +302,13 @@ a {
 
   border-radius: 50%;
   border-color: rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: var(--primary-bg-color);
   cursor: pointer;
+  transition: fill 250ms var(--timing-function);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--accent-text-color);
 }
 .modal-btn > .modal-icon {
   width: 18px;
@@ -303,7 +316,64 @@ a {
 
   background-size: contain;
 }
+/* Form */
+.form {
+  width: 528px;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px;
+  padding-top: 0;
+}
+.form-titel {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.1;
+  color: var(--primary-text-color);
+  margin-bottom: 12px;
+}
+.form-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: var(--titel-text-color);
+}
+.form-input {
+  margin: 0;
+  padding: 11px 12px;
+  /* border-radius: 4px; */
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  text-align: start;
+}
+.form-field input::placeholder {
+  color: var(--ph-text-color);
+}
+textarea {
+  resize: none;
+}
+.form-check {
+  display: flex;
+  align-items: baseline;
+}
+.check-label {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-left: 8px;
+  margin-bottom: 30px;
+}
+.check-input {
+  background-color: var(--primary-bg-color);
+}
+.check-input:checked {
+  background-color: var(--accent-text-color);
+}
 /* особености */
+
 /* section */
 section {
   padding-top: 94px;
