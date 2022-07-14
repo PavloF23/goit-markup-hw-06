@@ -828,3 +828,37 @@ address {
   font-size: 14px;
   line-height: 1.2;
 }
+.subscription {
+  margin-left: auto;
+}
+.send-input {
+  width: 358px;
+  height: 50px;
+  padding: 11px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--bg-hero-color);
+  transition: box-shadow 250ms var(--timing-function);
+}
+.subscription-field {
+  display: flex;
+}
+.subscription-label:focus-within > .send-input {
+  box-shadow: 0 4px 0 4px rgba(0, 0, 0, 0.15);
+}
+.button-send {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+}
+.send-text {
+  margin-left: -25px;
+}
+.send-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/icon-send.svg);
+}
