@@ -454,23 +454,23 @@
         </button>
         <form class="form js-speaker-form">
           <h2 class="form-titel">Оставьте свои данные, мы вам перезвоним</h2>
-          <label class="form-field" for="">
+          <label class="form-field" for="name">
             <span class="form-label">Имя</span>
-            <input class="form-input" type="text" name="name" />
+            <input class="form-input" type="text" name="name" id="name" />
             <svg class="form-icon">
               <use href="./images/sprite.svg#icon-form-name"></use>
             </svg>
           </label>
-          <label class="form-field"
+          <label class="form-field" for="tel"
             ><span class="form-label">Телефон</span>
-            <input class="form-input" type="tel" name="" />
+            <input class="form-input" type="tel" name="tel" id="tel" />
             <svg class="form-icon">
               <use href="./images/sprite.svg#icon-form-tel"></use>
             </svg>
           </label>
-          <label class="form-field"
+          <label class="form-field" for="mail"
             ><span class="form-label">Почта</span>
-            <input class="form-input" type="email" name="" />
+            <input class="form-input" type="email" name="mail" id="mail" />
             <svg class="form-icon">
               <use href="./images/sprite.svg#icon-form-mail"></use>
             </svg>
@@ -483,6 +483,7 @@
               name="comment"
               cols="30"
               rows="10"
+              id="comment"
               placeholder="Введите текст"
             ></textarea>
           </label>
