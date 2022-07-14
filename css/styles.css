@@ -849,16 +849,15 @@ address {
   box-shadow: 0 4px 0 4px rgba(0, 0, 0, 0.15);
 }
 .button-send {
-  position: relative;
+  display: inline-flex;
   width: 200px;
   height: 50px;
   margin-left: 12px;
+  padding: 10px 28px;
 }
-.send-text {
-  margin-left: -25px;
-}
-.send-icon {
-  position: absolute;
+.button-send::after {
+  content: "";
+  display: inline-block;
   width: 24px;
   height: 24px;
   margin-left: 10px;
